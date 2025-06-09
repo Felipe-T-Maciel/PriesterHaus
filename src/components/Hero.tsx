@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
             {/* Logo Image with Animations */}
             <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-8 group">
               <img 
-                src="/public/Image_20250606_092954_150-removebg-preview.png"
+                src="ChatGPT_Image_8_de_jun._de_2025__22_39_36-removebg-preview.png"
                 alt="Priesterhaus Logo"
                 className="w-full h-full object-contain filter brightness-0 invert opacity-90 group-hover:opacity-100 transition-all duration-500 animate-logo-glow"
               />
