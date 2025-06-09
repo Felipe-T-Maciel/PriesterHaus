@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic:wght@400;700&family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .golden-button {
+    @apply bg-vibrant-gold text-deep-black px-8 py-4 rounded-full font-semibold uppercase tracking-wide transition-all duration-300 hover:bg-golden-glow hover:shadow-2xl hover:shadow-vibrant-gold/50 transform hover:scale-105;
+  }
+  
+  .wood-card {
+    @apply bg-gradient-to-br from-dark-wood/80 to-leather-amber/60 backdrop-blur-sm border border-vibrant-gold/20 rounded-xl overflow-hidden relative;
+  }
+  
+  .glass-effect {
+    @apply backdrop-blur-md bg-deep-black/70 border border-vibrant-gold/30;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700;
+  }
+  
+  .text-texture {
+    background: linear-gradient(45deg, #FFD700, #FFE55C, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+  }
+  
+  .ambient-lights {
+    background: radial-gradient(circle at 20% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 70%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 60% 60%, rgba(255, 215, 0, 0.1) 0%, transparent 50%);
+  }
+  
+  .floating-element {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .parallax-slow {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+}
+
+@layer utilities {
+  .text-shadow-gold {
+    text-shadow: 2px 2px 4px rgba(255, 215, 0, 0.5);
+  }
+  
+  .box-shadow-gold {
+    box-shadow: 0 10px 40px rgba(255, 215, 0, 0.2);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFD700;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFE55C;
+}
+
+/* String lights effect */
+.string-lights {
+  position: relative;
+  overflow: hidden;
+}
+
+.string-lights::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    #FFD700 10%, 
+    transparent 20%, 
+    #FFD700 30%, 
+    transparent 40%, 
+    #FFD700 50%, 
+    transparent 60%, 
+    #FFD700 70%, 
+    transparent 80%, 
+    #FFD700 90%, 
+    transparent 100%
+  );
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+.string-lights::after {
+  content: '●●●●●●●●●●●●●●●●●●●●';
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  color: #FFD700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 2rem;
+  animation: twinkle 3s ease-in-out infinite reverse;
+  opacity: 0.7;
+}
+
+/* Logo Glow Animation */
+@keyframes logo-glow {
+  0%, 100% {
+    filter: brightness(0) invert drop-shadow(0 0 10px #FFD700) drop-shadow(0 0 20px #FFD700);
+  }
+  50% {
+    filter: brightness(0) invert drop-shadow(0 0 20px #FFD700) drop-shadow(0 0 40px #FFD700) drop-shadow(0 0 60px #FFD700);
+  }
+}
+
+.animate-logo-glow {
+  animation: logo-glow 3s ease-in-out infinite;
+}
+
+/* Smoke effect */
+@keyframes smokeRise {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-50px) rotate(180deg) scale(1.2);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg) scale(0.8);
+    opacity: 0;
+  }
+}
+
+.smoke-effect {
+  position: relative;
+}
+
+.smoke-effect::before {
+  content: '💨';
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  font-size: 20px;
+  animation: smokeRise 4s ease-out infinite;
+  opacity: 0.6;
+}
+
+/* Bubble effect */
+.bubble-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.bubble-effect::before,
+.bubble-effect::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 215, 0, 0.6);
+  border-radius: 50%;
+  animation: bubble 3s ease-in-out infinite;
+}
+
+.bubble-effect::before {
+  top: 80%;
+  left: 30%;
+  animation-delay: 0s;
+}
+
+.bubble-effect::after {
+  top: 85%;
+  left: 70%;
+  animation-delay: 1.5s;
+}
