@@ -1,4 +1,4 @@
-aimport React from 'react';
+import React from 'react';
 import { MapPin, Clock, Instagram, ExternalLink } from 'lucide-react';
 
 const Contact: React.FC = () => {
