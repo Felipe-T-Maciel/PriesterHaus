@@ -95,7 +95,7 @@ const Contact: React.FC = () => {
               {/* Map Button */}
               <div className="pt-4"> 
                 <a 
-                  href="https://maps.google.com/?q=Rua+Pe.+Gabriel+Lux+900+Teresópolis+SC"
+                  href="https://maps.google.com/?q=Rua+Pe.+Gabriel+Lux+900+Corupá+SC"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="golden-button w-full flex items-center justify-center space-x-2 font-inter"
