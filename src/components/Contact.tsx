@@ -38,8 +38,8 @@ const Contact: React.FC = () => {
                     <p className="text-warm-gray font-inter leading-relaxed">
                       Rua Pe. Gabriel Lux, 900<br />
                       Seminário<br />
-                      Corupá - SC />
-                      89280-000 />
+                      Corupá - SC <br />
+                      89280-000
                     </p>
                   </div>
                 </div>
