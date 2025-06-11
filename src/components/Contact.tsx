@@ -1,4 +1,4 @@
-import React from 'react';
+aimport React from 'react';
 import { MapPin, Clock, Instagram, ExternalLink } from 'lucide-react';
 
 const Contact: React.FC = () => {
@@ -53,9 +53,9 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="font-league text-xl font-bold text-vibrant-gold mb-2 uppercase tracking-wide">Horário de Funcionamento</h3>
                     <div className="text-warm-gray font-inter space-y-1">
-                      <p>Segunda a Quinta: 18h às 00h</p>
-                      <p>Sexta e Sábado: 18h às 02h</p>
-                      <p>Domingo: 18h às 23h</p>
+                      <p>Segunda a Sexta: 18h às 22h</p>
+                      <p>Sábado: 10h às 22h</p>
+                      <p>Domingo: 10h às 21h</p>
                     </div>
                   </div>
                 </div>
