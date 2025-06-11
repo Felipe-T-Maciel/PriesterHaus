@@ -37,8 +37,9 @@ const Contact: React.FC = () => {
                     <h3 className="font-league text-xl font-bold text-vibrant-gold mb-2 uppercase tracking-wide">Endereço</h3>
                     <p className="text-warm-gray font-inter leading-relaxed">
                       Rua Pe. Gabriel Lux, 900<br />
-                      Bairro Seminário<br />
-                      Teresópolis - SC
+                      Seminário<br />
+                      Corupá - SC />
+                      89280-000
                     </p>
                   </div>
                 </div>
@@ -109,7 +110,7 @@ const Contact: React.FC = () => {
             <div className="wood-card p-4">
               <div className="aspect-square rounded-lg overflow-hidden relative">
                 <iframe
-                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.123456789!2d-49.1658!3d-27.4123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDI0JzQ0LjMiUyA0OcKwMDknNTYuOSJX!5e0!3m2!1spt!2sbr!4v1699999999999!5m2!1spt!2sbr"
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.123456789!2d-49.2427778!3d-26.425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df4b0cdeadbeef%3A0xabcdef1234567890!2sR.%20Padre%20Gabriel%20Lux%2C%20900%20-%20Semin%C3%A1rio%2C%20Corup%C3%A1%20-%20SC%2C%2089280-000!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr"
                    width="100%"
                    height="100%"
                    style={{ border: 0 }}
